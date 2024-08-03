@@ -5,12 +5,11 @@ with open("readme.md", "r") as file:
 
 setup(
     name="websockethost",
-    version="0.0.2",
+    version="0.0.3",
     description="Web and python socket host",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    package_dir={"": "websockethost"},
-    package=find_packages(where="websockethost"),
+    package=find_packages(),
     url="https://github.com/lamalice20/websockethost",
     author="lamalice20",
     author_email="discord974a@gmail.com",
