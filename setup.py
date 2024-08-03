@@ -5,7 +5,7 @@ with open("readme.md", "r") as file:
 
 setup(
     name="websockethost",
-    version="0.0.4",
+    version="0.1.1",
     description="Web and python socket host",
     long_description=long_description,
     long_description_content_type="text/markdown",
