@@ -8,6 +8,7 @@ setup(
     version="0.0.1",
     description="Web and python socket host",
     long_description=long_description,
+    long_description_content_type="Websocket et simple efficace de python",
     package_dir={"": "app"},
     package=find_packages(where="app"),
     url="https://github.com/lamalice20/websockethost",
