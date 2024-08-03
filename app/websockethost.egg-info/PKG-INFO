@@ -6,7 +6,7 @@ Home-page: https://github.com/lamalice20/websockethost
 Author: lamalice20
 Author-email: discord974a@gmail.com
 Requires-Python: >=3.12.4
-Description-Content-Type: Websocket et simple efficace de python
+Description-Content-Type: text/markdown
 Requires-Dist: vidstream>=0.0.14
 Requires-Dist: pyscreeze>=0.1.30
 Requires-Dist: pillow>=10.4.0
