@@ -1,0 +1,9 @@
+setup.py
+websockethost/__init__.py
+websockethost/basicCGIserver.py
+websockethost/basicserverhttp.py
+websockethost/websockethost.egg-info/PKG-INFO
+websockethost/websockethost.egg-info/SOURCES.txt
+websockethost/websockethost.egg-info/dependency_links.txt
+websockethost/websockethost.egg-info/requires.txt
+websockethost/websockethost.egg-info/top_level.txt
