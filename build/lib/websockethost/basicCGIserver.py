@@ -12,5 +12,3 @@ def startCGIserver(port: int, host: str):
         httpR.serve_forever()
     except KeyboardInterrupt:
         print('Serveur CGI arréter...')
-
-startCGIserver(8080, host="localhost")

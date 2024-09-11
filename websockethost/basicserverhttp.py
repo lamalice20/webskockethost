@@ -2,7 +2,7 @@ import http.server as server
 import socketserver
 import threading 
 
-def start_server(port: int, host: str):
+def start_server_http(port: int, host: str):
     adress = (host, port)
 
     handler = server.SimpleHTTPRequestHandler
@@ -13,5 +13,3 @@ def start_server(port: int, host: str):
         httpR.serve_forever()
     except KeyboardInterrupt:
         print('Serveur arrété...')
-
-start_server(8080, "localhost")
