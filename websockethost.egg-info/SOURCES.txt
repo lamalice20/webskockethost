@@ -6,3 +6,7 @@ websockethost.egg-info/PKG-INFO
 websockethost.egg-info/SOURCES.txt
 websockethost.egg-info/dependency_links.txt
 websockethost.egg-info/top_level.txt
+websockethost/socketServerClient/SqlSys.py
+websockethost/socketServerClient/__init__.py
+websockethost/socketServerClient/client.py
+websockethost/socketServerClient/server.py
