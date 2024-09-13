@@ -2,13 +2,12 @@ from websockethost.socketServerClient.SqlSys import SqlSys
 import threading
 
 class ThreadForClient(threading.Thread):
-	def __init__(self, client, db_name: str):
+	def __init__(self, client):
 		threading.Thread.__init__(self)
 		self.client = client
-		self.db_name = db_name
 
 	def run(self):
-		db_host = SqlSys(self.db_name)
+		db_host = SqlSys("data.db")
 		dataMSG = self.client.recv(1024).decode("utf-8")
 		if dataMSG == "USERNAME_REGISTER":
 			clientUsername = self.client.recv(1024).decode("utf-8")
