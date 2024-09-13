@@ -10,7 +10,6 @@ def start_socket_server(host: str, port: int, log_file: str):
 		try:
 			server.listen(5)
 			client, addr = server.accept()
-
 				
 			with open("conn.log", "a+") as logs:
 				logs.write(f"The connection as create on : {addr}")
