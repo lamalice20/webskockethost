@@ -5,7 +5,7 @@ with open("readme.md", "r") as file:
 
 setup(
     name="websockethost",
-    version="0.1.7",
+    version="0.1.8",
     description="Web and python socket host (UPD)",
     package={"": ""},
     packages=find_packages(),

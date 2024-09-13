@@ -1,5 +1,5 @@
 import socket
-from ThreadScripts.ThreadForClient import ThreadForClient
+from websockethost.socketServerClient.ThreadScripts.ThreadForClient import ThreadForClient
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

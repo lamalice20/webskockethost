@@ -1,4 +1,4 @@
-from SqlSys import SqlSys
+from websockethost.socketServerClient.SqlSys import SqlSys
 import threading
 
 class ThreadForClient(threading.Thread):
