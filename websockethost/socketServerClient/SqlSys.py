@@ -10,7 +10,14 @@ class SqlSys:
         cursor.execute(query, (username, password))
         self.conn.commit()
         cursor.close()
-    
+
+    def init_database(self, Table_name: str):
+        cursor = self.conn.cursor()
+        query = f"CREATE TABLE {Table_name} (username TEXT NOT NULL UNIQUE, password TEXT NOT NULL);"
+        cursor.execute(query)
+        self.conn.commit()
+        cursor.close()
+
     def login_user(self, username, password):
         cursor = self.conn.cursor()
         query = f"SELECT * FROM users WHERE username = ? AND password = ?"

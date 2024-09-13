@@ -6,13 +6,18 @@ class ThreadForClient(threading.Thread):
 		threading.Thread.__init__(self)
 		self.client = client
 
-	def run(self):
+	def run(self, add_table=False):
 		db_host = SqlSys("data.db")
 		dataMSG = self.client.recv(1024).decode("utf-8")
 		if dataMSG == "USERNAME_REGISTER":
 			clientUsername = self.client.recv(1024).decode("utf-8")
 			clientPassword = self.client.recv(1024).decode("utf-8")
+			if add_table == True:
+				db_host.init_database("users")
+			else:
+				pass
 			db_host.add_User(clientUsername, clientPassword)
+
 
 		if dataMSG == "USERNAME_LOGIN":
 			ClientLoginUsername = self.client.recv(1024).decode("utf-8")
